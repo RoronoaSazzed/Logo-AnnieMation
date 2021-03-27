@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S AnnieMation</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            position: relative;
+        }
+
+        #sLetter {
+            animation: retterShi 2s ease-in-out 1 normal forwards;
+            transform-origin: center;
+            transform-box: fill-box;
+            opacity: 0;
+        }
+
+        @keyframes retterShi {
+            0% {
+                transform: rotate(0deg) scale(0);
+            }
+
+            60%,
+            70% {
+                opacity: 1;
+                transform: rotate(720deg) scale(1.2);
+            }
+
+            100% {
+                opacity: 1;
+                transform: rotate(360deg) scale(1);
+            }
+
+        }
+
+        #sWheel {
+            animation: SwheelDesu 1.5s ease-in-out 1.5s 1 normal forwards;
+            opacity: 0;
+        }
+
+        @keyframes SwheelDesu {
+
+            0%{
+                opacity: 0;
+                clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0%);
+
+            }
+
+            100%{
+                opacity: 1;
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+
+
+        <svg width="30%" min-height="0" viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="only-s">
+                <g id="sWheel">
+                    <path id="Vector"
+                        d="M345.72 279.5C303.088 365.116 232.949 416.815 189.06 395.008C172.356 386.713 161.863 368.987 157.62 345.447H167.058C171.689 354.257 178.097 361.003 186.272 365.058C214.961 379.326 256.907 356.37 290.805 311.791C298.546 301.56 305.53 290.779 311.701 279.532C313.556 276.168 315.357 272.73 317.106 269.218C352.573 197.997 351.493 125.423 314.693 107.132C286.428 93.0808 245.309 115.148 211.69 158.419C253.401 98.8752 307.287 67.0279 343.408 85.0015C387.309 106.815 388.338 193.897 345.72 279.5Z"
+                        fill="url(#paint0_linear)" />
+                    <path id="Vector_2"
+                        d="M240.494 348.824C222.894 358.731 205.841 361.32 192.134 354.504C187.716 352.289 183.793 349.204 180.6 345.435H197.749C199.746 347.1 201.931 348.527 204.259 349.687C214.739 354.866 227.296 354.231 240.494 348.824Z"
+                        fill="#707070" />
+                    <path id="Vector_3"
+                        d="M330.571 143.651C326.678 136.593 321.387 131.186 314.731 127.873C292.634 116.887 261.257 131.928 233.971 163.135H217.597C248.008 124.922 284.606 105.615 309.815 118.137C319.443 122.942 326.36 131.846 330.571 143.651Z"
+                        fill="#707070" />
+                </g>
+                <g id="sLetter">
+                    <path id="Vector_4"
+                        d="M183.134 214.263H291.51L304.664 173.987H173.607C173.216 173.99 172.826 174.018 172.438 174.07C157.43 174.996 151.269 184.999 147.483 194.963C147.106 195.773 146.791 196.611 146.543 197.47L145.508 200.688L131.998 242.34C130.093 248.052 129.159 252.939 129.254 256.836C129.343 260.866 130.207 264.255 131.795 266.895C133.349 269.531 135.722 271.588 138.553 272.753C141.315 273.877 144.272 274.442 147.254 274.416H231.062L231.545 275.305L226.248 292.117L223.326 294.3H115.154L102 334.557H233.304C234.264 334.551 235.219 334.429 236.15 334.195C255.84 331.275 260.197 310.852 261.962 305.394L274.665 266.147C276.412 260.384 277.257 255.675 277.257 251.765C277.257 247.722 276.437 244.327 274.824 241.655C273.298 239.054 270.982 237.006 268.212 235.81C265.492 234.673 262.567 234.103 259.619 234.134H175.423L174.674 233.1L180.346 215.647L183.134 214.263Z"
+                        fill="url(#paint1_linear)" />
+                </g>
+            </g>
+            <defs>
+                <linearGradient id="paint0_linear" x1="157.62" y1="239.992" x2="377.02" y2="239.992"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#1572CE" />
+                    <stop offset="1" stop-color="#2357B5" />
+                </linearGradient>
+                <linearGradient id="paint1_linear" x1="129693" y1="59945.9" x2="58678.8" y2="128350"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#1572CE" />
+                    <stop offset="1" stop-color="#2357B5" />
+                </linearGradient>
+            </defs>
+        </svg>
+
+
+    </div>
+</body>
+
+</html>
